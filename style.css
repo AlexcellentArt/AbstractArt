@@ -1,0 +1,37 @@
+body {
+    background-color: darkblue;
+}
+form,div,section {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 50% 50% 50% 6%;
+    shape-image-threshold: 5;
+    
+}
+div
+{
+    background-color:peru;
+    padding: 5%;
+    /* offset-path: 50% 50% 50% 6%;
+  */
+    section {
+        h1 {
+            text-align:center;
+            padding-inline: calc(1% + 3em);
+        }
+        padding-left: 2%;
+        /* align-self:center; */
+        margin-top: 5px;
+        background-color: rgb(245, 197, 121);
+        /*  background-color: rgba(255, 249, 170, 0.355); */
+    }
+
+}
+form {
+    background-color: rgb(255, 249, 170);
+    gap: 0.5em;
+    /* this should prevent text from going out of bounds */
+    padding-inline: calc(2% + 3em);
+    padding-block:  calc(8% + 3em);
+}
