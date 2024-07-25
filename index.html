@@ -5,22 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Very Real Gallery</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="createText.js" defer></script>
   </head>
   <body>
-    <section>
+    <div id="formHeaderText">
+           
+    </div>
+    <div class="art">
+          <div class="cat"><img src="DistortedBlockDog.png"></div>
+          <div class="star"><img src="RadKindaStar.png"></div>
+          <div class="night"></div>
+          <div class="moon"><img src="Moon.png"></div>
+          <div class="artText"><h1>Get Groovy With It</h1></div>
+    </div>
+    <section class="interestForm">
       <div>
         <section>
           <h1>Event Interest Form</h1>
-          <form>
-            <p>Fill out your information here and click submit to show your Interest in this exciting event! The first 200 people to do so will get their tickets 50% off!</p>
+  
+          <!-- <div>
+            <svg id="curvedText">
+              <path id="curve" d="M10,100 Q250,50 490,100" fill="transparent" />
+              <text x="5" y="3" fill="black" font-size="25">
+                <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                  Event Interest Form
+                </textPath>
+              </text>
+            </svg>
+          </div> -->
+          <form action="form_submitted.html">
+
+            <p>
+              Fill out your information here and click submit to show your
+              Interest in this exciting event! The first 200 people to do so
+              will get their tickets 50% off!
+            </p>
             <label title="name">Name:</label>
             <input type="text" id="name" value="text" />
             <label title="text">Email:</label>
             <input type="email" id="email" value="text" />
-            <input type="submit">
+            <input type="submit" value="Submit"/>
           </form>
         </section>
-
       </div>
     </section>
   </body>
